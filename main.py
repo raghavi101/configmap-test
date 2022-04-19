@@ -6,8 +6,8 @@ def create_yaml(path, resource):
 
 def burst(path: str, n: int):
     if n == 0:
-        os.system(f"cp dep.yaml {path}")
-        create_yaml(path, "- dep.yaml")
+        os.system(f"cp book.yaml {path}")
+        create_yaml(path, "- book.yaml")
         return
 
     for j in "abcdefghij":
@@ -16,5 +16,5 @@ def burst(path: str, n: int):
 
     create_yaml(path, "\n".join([f"- layer{n}{i}" for i in "abcdefghij"]))
 
-os.mkdir("layer10")
-burst("layer10", 9)
+os.mkdir("layer5")
+burst("layer5", 4)
