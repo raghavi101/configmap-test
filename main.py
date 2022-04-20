@@ -17,8 +17,8 @@ def create_yaml(path, resource):
 
 def burst(path: str, n: int):
     if n == 0:
-        os.system(f"cp dep.yaml {path}")
-        create_yaml(path, "- dep.yaml")
+        # os.system(f"cp https://raw.githubusercontent.com/raghavi101/configmap-test/master/book.yaml {path}")
+        create_yaml(path, "- https://raw.githubusercontent.com/raghavi101/configmap-test/master/book.yaml")
         return
 
     for j in "abcdefghij":

@@ -3,4 +3,4 @@ kind: Kustomization
 namePrefix: 1f-
 
 resources: 
-- book.yaml
+- https://raw.githubusercontent.com/raghavi101/configmap-test/master/book.yaml
