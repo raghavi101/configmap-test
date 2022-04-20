@@ -1,4 +1,7 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-config
 data:
   book.txt: |-
     The Project Gutenberg eBook of Aristotle’s works:, by Anonymous
@@ -9958,10 +9961,5 @@ data:
     including how to make donations to the Project Gutenberg Literary
     Archive Foundation, how to help produce our new eBooks, and how to
     subscribe to our email newsletter to hear about new eBooks.
-kind: ConfigMap
-metadata:
-  creationTimestamp: "2022-04-18T12:47:27Z"
-  name: my-config
-  namespace: default
-  resourceVersion: "2199"
-  uid: 17a81d63-6971-41fe-bf04-8f44c86bf29d
+
+  
