@@ -2,7 +2,7 @@
 
 kubectl delete namespace argocd
 kubectl create namespace argocd 
-kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml 
+kubectl apply -n argocd -f https://raw.githubusercontent.com/raghavi101/configmap-test/master/manifests/argo.yaml 
 
 tput setaf 3; echo "Waiting for ArgoCD to start . . ." ; tput sgr0
 
