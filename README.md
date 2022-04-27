@@ -11,11 +11,9 @@ Example: What if we have 1000 1MB ConfigMaps: this would be 1GB of data that Arg
 ```
 git clone https://github.com/raghavi101/configmap-test.git
 ```
-2. Aquire a cluster (minikube/oc etc), be sure that a ``metrics-server`` is configured within the kube-system namespace. If not then run the following command :
-```
-https://raw.githubusercontent.com/raghavi101/configmap-test/master/manifests/components.yaml
-```
-3. At the root of the cloned repository run the shell script 
+2. Aquire a cluster (minikube/oc etc).
+
+4. At the root of the cloned repository run the shell script 
 #### NOTE :  'argocd' namespace will be recreated afresh. Running deployments will be disgarded.
  ```
  ./script.sh
